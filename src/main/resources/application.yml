@@ -93,7 +93,7 @@ spring:
     type:
       redis
 
-# spring boot admin配置开始
+  # spring boot admin配置开始
   boot:
     admin:
       client:
