@@ -317,33 +317,33 @@ CREATE TABLE `t_log` (
 -- ----------------------------
 -- Records of t_log
 -- ----------------------------
-INSERT INTO `t_log` VALUES ('730', 'MrBird', '恢复任务', '55', 'cc.mrbird.job.controller.JobController.resumeJob()', 'jobIds: 3', '127.0.0.1', '2018-03-19 10:07:32', null);
-INSERT INTO `t_log` VALUES ('731', 'MrBird', '执行任务', '40', 'cc.mrbird.job.controller.JobController.runJob()', 'jobIds: 3', '127.0.0.1', '2018-03-19 10:07:36', null);
-INSERT INTO `t_log` VALUES ('733', 'MrBird', '暂停任务', '10', 'cc.mrbird.job.controller.JobController.pauseJob()', 'jobIds: 3', '127.0.0.1', '2018-03-19 10:07:53', null);
-INSERT INTO `t_log` VALUES ('734', 'MrBird', '恢复任务', '17', 'cc.mrbird.job.controller.JobController.resumeJob()', 'jobIds: 1', '127.0.0.1', '2018-03-19 10:08:02', null);
-INSERT INTO `t_log` VALUES ('735', 'MrBird', '执行任务', '13', 'cc.mrbird.job.controller.JobController.runJob()', 'jobIds: 1', '127.0.0.1', '2018-03-19 10:08:05', null);
-INSERT INTO `t_log` VALUES ('737', 'MrBird', '暂停任务', '11', 'cc.mrbird.job.controller.JobController.pauseJob()', 'jobIds: 1', '127.0.0.1', '2018-03-19 10:08:27', null);
-INSERT INTO `t_log` VALUES ('738', 'MrBird', '执行任务', '14', 'cc.mrbird.job.controller.JobController.runJob()', 'jobIds: 11', '127.0.0.1', '2018-03-19 10:08:34', null);
-INSERT INTO `t_log` VALUES ('840', 'MrBird', '删除用户', '255', 'cc.mrbird.system.controller.UserController.deleteUsers()', 'ids: 165,166', '127.0.0.1', '2018-03-20 18:34:26', null);
-INSERT INTO `t_log` VALUES ('841', 'MrBird', '修改用户', '348', 'cc.mrbird.system.controller.UserController.updateUser()', 'user: cc.mrbird.system.domain.User@5adf3b3b  roles: [Ljava.lang.Long;@75a9cd18', '127.0.0.1', '2018-03-21 09:05:12', null);
-INSERT INTO `t_log` VALUES ('842', 'MrBird', '删除调度日志', '79', 'cc.mrbird.job.controller.JobLogController.deleteJobLog()', 'ids: 2447', '127.0.0.1', '2018-03-22 18:52:10', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('843', 'MrBird', '修改用户', '18805', 'cc.mrbird.system.controller.UserController.updateUser()', 'user: cc.mrbird.system.domain.User@1a6c90df  rolesSelect: [Ljava.lang.Long;@4d9b2e06', '127.0.0.1', '2018-03-27 09:20:05', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('844', 'MrBird', '修改用户', '5222', 'cc.mrbird.system.controller.UserController.updateUser()', 'user: cc.mrbird.system.domain.User@655c7201  rolesSelect: [Ljava.lang.Long;@1840d3a4', '127.0.0.1', '2018-03-27 09:20:23', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('845', 'MrBird', '修改用户', '6989', 'cc.mrbird.system.controller.UserController.updateUser()', 'user: cc.mrbird.system.domain.User@3691c744  rolesSelect: [Ljava.lang.Long;@1cb15d59', '127.0.0.1', '2018-03-27 09:21:09', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('846', 'MrBird', '新增任务', '361', 'cc.mrbird.job.controller.JobController.addJob()', 'job: cc.mrbird.job.domain.Job@41ea2910', '127.0.0.1', '2018-03-27 15:24:30', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('847', 'MrBird', '修改任务', '429', 'cc.mrbird.job.controller.JobController.updateJob()', 'job: cc.mrbird.job.domain.Job@7cb0d614', '127.0.0.1', '2018-03-27 15:25:31', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('848', 'MrBird', '修改任务', '273', 'cc.mrbird.job.controller.JobController.updateJob()', 'job: cc.mrbird.job.domain.Job@4937e65d', '127.0.0.1', '2018-03-27 17:43:09', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('849', 'MrBird', '修改任务', '712', 'cc.mrbird.job.controller.JobController.updateJob()', 'job: cc.mrbird.job.domain.Job@aa7781d', '127.0.0.1', '2018-03-27 17:43:31', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('850', 'MrBird', '新增任务', '294', 'cc.mrbird.job.controller.JobController.addJob()', 'job: cc.mrbird.job.domain.Job@5543ec34', '127.0.0.1', '2018-03-28 14:36:44', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('851', 'MrBird', '修改任务', '353', 'cc.mrbird.job.controller.JobController.updateJob()', 'job: cc.mrbird.job.domain.Job@3fccec56', '127.0.0.1', '2018-03-28 14:37:06', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('852', 'MrBird', '修改任务', '262', 'cc.mrbird.job.controller.JobController.updateJob()', 'job: cc.mrbird.job.domain.Job@2ed43da1', '127.0.0.1', '2018-03-28 14:41:50', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('853', 'MrBird', '删除任务', '589', 'cc.mrbird.job.controller.JobController.deleteJob()', 'ids: 18,19', '127.0.0.1', '2018-03-29 10:26:30', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('854', 'MrBird', '新增任务', '548', 'cc.mrbird.job.controller.JobController.addJob()', 'job: cc.mrbird.job.domain.Job@b404b16', '127.0.0.1', '2018-03-29 10:27:11', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('855', 'MrBird', '修改任务', '442', 'cc.mrbird.job.controller.JobController.updateJob()', 'job: cc.mrbird.job.domain.Job@49f25426', '127.0.0.1', '2018-03-29 10:29:18', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('856', 'MrBird', '删除任务', '520', 'cc.mrbird.job.controller.JobController.deleteJob()', 'ids: 20', '127.0.0.1', '2018-03-29 10:41:20', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('857', 'MrBird', '修改用户', '449', 'cc.mrbird.system.controller.UserController.updateUser()', 'user: cc.mrbird.system.domain.User@68355f70  rolesSelect: [Ljava.lang.Long;@80ce783', '127.0.0.1', '2018-03-29 16:18:26', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('858', 'MrBird', '修改用户', '686', 'cc.mrbird.system.controller.UserController.updateUser()', 'user: cc.mrbird.system.domain.User@784012be  rolesSelect: [Ljava.lang.Long;@368eb59f', '127.0.0.1', '2018-03-29 16:18:37', 'XX内网IP');
-INSERT INTO `t_log` VALUES ('859', 'MrBird', '删除用户', '200', 'cc.mrbird.system.controller.UserController.deleteUsers()', 'ids: 41,68,92,125,161,162', '127.0.0.1', '2018-04-02 17:29:50', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('730', 'MrBird', '恢复任务', '55', 'JobController.resumeJob()', 'jobIds: 3', '127.0.0.1', '2018-03-19 10:07:32', null);
+INSERT INTO `t_log` VALUES ('731', 'MrBird', '执行任务', '40', 'JobController.runJob()', 'jobIds: 3', '127.0.0.1', '2018-03-19 10:07:36', null);
+INSERT INTO `t_log` VALUES ('733', 'MrBird', '暂停任务', '10', 'JobController.pauseJob()', 'jobIds: 3', '127.0.0.1', '2018-03-19 10:07:53', null);
+INSERT INTO `t_log` VALUES ('734', 'MrBird', '恢复任务', '17', 'JobController.resumeJob()', 'jobIds: 1', '127.0.0.1', '2018-03-19 10:08:02', null);
+INSERT INTO `t_log` VALUES ('735', 'MrBird', '执行任务', '13', 'JobController.runJob()', 'jobIds: 1', '127.0.0.1', '2018-03-19 10:08:05', null);
+INSERT INTO `t_log` VALUES ('737', 'MrBird', '暂停任务', '11', 'JobController.pauseJob()', 'jobIds: 1', '127.0.0.1', '2018-03-19 10:08:27', null);
+INSERT INTO `t_log` VALUES ('738', 'MrBird', '执行任务', '14', 'JobController.runJob()', 'jobIds: 11', '127.0.0.1', '2018-03-19 10:08:34', null);
+INSERT INTO `t_log` VALUES ('840', 'MrBird', '删除用户', '255', 'UserController.deleteUsers()', 'ids: 165,166', '127.0.0.1', '2018-03-20 18:34:26', null);
+INSERT INTO `t_log` VALUES ('841', 'MrBird', '修改用户', '348', 'UserController.updateUser()', 'user: User@5adf3b3b  roles: [Ljava.lang.Long;@75a9cd18', '127.0.0.1', '2018-03-21 09:05:12', null);
+INSERT INTO `t_log` VALUES ('842', 'MrBird', '删除调度日志', '79', 'JobLogController.deleteJobLog()', 'ids: 2447', '127.0.0.1', '2018-03-22 18:52:10', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('843', 'MrBird', '修改用户', '18805', 'UserController.updateUser()', 'user: User@1a6c90df  rolesSelect: [Ljava.lang.Long;@4d9b2e06', '127.0.0.1', '2018-03-27 09:20:05', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('844', 'MrBird', '修改用户', '5222', 'UserController.updateUser()', 'user: User@655c7201  rolesSelect: [Ljava.lang.Long;@1840d3a4', '127.0.0.1', '2018-03-27 09:20:23', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('845', 'MrBird', '修改用户', '6989', 'UserController.updateUser()', 'user: User@3691c744  rolesSelect: [Ljava.lang.Long;@1cb15d59', '127.0.0.1', '2018-03-27 09:21:09', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('846', 'MrBird', '新增任务', '361', 'JobController.addJob()', 'job: Job@41ea2910', '127.0.0.1', '2018-03-27 15:24:30', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('847', 'MrBird', '修改任务', '429', 'JobController.updateJob()', 'job: Job@7cb0d614', '127.0.0.1', '2018-03-27 15:25:31', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('848', 'MrBird', '修改任务', '273', 'JobController.updateJob()', 'job: Job@4937e65d', '127.0.0.1', '2018-03-27 17:43:09', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('849', 'MrBird', '修改任务', '712', 'JobController.updateJob()', 'job: Job@aa7781d', '127.0.0.1', '2018-03-27 17:43:31', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('850', 'MrBird', '新增任务', '294', 'JobController.addJob()', 'job: Job@5543ec34', '127.0.0.1', '2018-03-28 14:36:44', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('851', 'MrBird', '修改任务', '353', 'JobController.updateJob()', 'job: Job@3fccec56', '127.0.0.1', '2018-03-28 14:37:06', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('852', 'MrBird', '修改任务', '262', 'JobController.updateJob()', 'job: Job@2ed43da1', '127.0.0.1', '2018-03-28 14:41:50', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('853', 'MrBird', '删除任务', '589', 'JobController.deleteJob()', 'ids: 18,19', '127.0.0.1', '2018-03-29 10:26:30', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('854', 'MrBird', '新增任务', '548', 'JobController.addJob()', 'job: Job@b404b16', '127.0.0.1', '2018-03-29 10:27:11', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('855', 'MrBird', '修改任务', '442', 'JobController.updateJob()', 'job: Job@49f25426', '127.0.0.1', '2018-03-29 10:29:18', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('856', 'MrBird', '删除任务', '520', 'JobController.deleteJob()', 'ids: 20', '127.0.0.1', '2018-03-29 10:41:20', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('857', 'MrBird', '修改用户', '449', 'UserController.updateUser()', 'user: User@68355f70  rolesSelect: [Ljava.lang.Long;@80ce783', '127.0.0.1', '2018-03-29 16:18:26', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('858', 'MrBird', '修改用户', '686', 'UserController.updateUser()', 'user: User@784012be  rolesSelect: [Ljava.lang.Long;@368eb59f', '127.0.0.1', '2018-03-29 16:18:37', 'XX内网IP');
+INSERT INTO `t_log` VALUES ('859', 'MrBird', '删除用户', '200', 'UserController.deleteUsers()', 'ids: 41,68,92,125,161,162', '127.0.0.1', '2018-04-02 17:29:50', 'XX内网IP');
 
 -- ----------------------------
 -- Table structure for t_menu

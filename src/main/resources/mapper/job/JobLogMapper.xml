@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cc.mrbird.job.dao.JobLogMapper">
-	<resultMap id="BaseResultMap" type="cc.mrbird.job.domain.JobLog">
+<mapper namespace="com.mrbird.job.dao.JobLogMapper">
+	<resultMap id="BaseResultMap" type="com.mrbird.job.domain.JobLog">
 		<!-- WARNING - @mbg.generated -->
 		<id column="LOG_ID" jdbcType="DECIMAL" property="logId" />
 		<result column="JOB_ID" jdbcType="DECIMAL" property="jobId" />
