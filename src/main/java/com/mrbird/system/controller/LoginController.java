@@ -61,8 +61,9 @@ public class LoginController extends BaseController {
 		UsernamePasswordToken token = new UsernamePasswordToken(username, password, rememberMe);
 		try {
 			Subject subject = getSubject();
-			if (subject != null)
+			if (subject != null) {
 				subject.logout();
+			}
 			super.login(token);
 			this.userService.updateLoginTime(username);
 			return ResponseBo.ok();
@@ -109,5 +110,10 @@ public class LoginController extends BaseController {
 		User user = super.getCurrentUser();
 		model.addAttribute("user", user);
 		return "index";
+	}
+
+	public static void main(String[] args) {
+	String password=	MD5Utils.encrypt("admin", "123456");
+	System.out.println(password);
 	}
 }

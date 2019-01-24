@@ -13,6 +13,8 @@ FEBS是一个简单高效的后台权限管理系统。项目基础框架采用�
 
 Spring Security版本已发布：[https://github.com/wuyouzhuguli/FEBS-Security](https://github.com/wuyouzhuguli/FEBS-Security)
 
+mrbird 123456
+
 ### 功能模块
 系统功能模块组成如下所示：
 ```
