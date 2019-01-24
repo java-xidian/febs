@@ -43,3 +43,4 @@ public class ApplicationRun extends SpringBootServletInitializer {
         log.info("FEBS started up successfully at {} {}", LocalDate.now(), LocalTime.now());
     }
 }
+

@@ -3,7 +3,6 @@ package com.mrbird.job.service;
 import com.mrbird.common.service.IService;
 import com.mrbird.job.domain.Job;
 import org.springframework.cache.annotation.CacheConfig;
-import org.springframework.cache.annotation.Cacheable;
 
 import java.util.List;
 
@@ -28,6 +27,11 @@ public interface JobService extends IService<Job> {
 
     void resume(String jobIds);
 
-     @Cacheable(key = "#p0")
+
+    /**
+     * add by lcq 2018加入缓存已注释掉
+     *
+     * @Cacheable(key = "#p0")
+     */
     List<Job> getSysCronClazz(Job job);
 }
