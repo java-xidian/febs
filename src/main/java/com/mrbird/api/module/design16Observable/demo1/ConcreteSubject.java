@@ -15,6 +15,11 @@ public class ConcreteSubject extends Subject {
         return state;
     }
 
+    /**
+     * 内容改变通知观察者
+     *
+     * @param newState
+     */
     public void change(String newState) {
         state = newState;
         System.out.println("主题状态为：" + state);
