@@ -16,7 +16,7 @@ import java.util.concurrent.Executors;
 public class ExecuteOrderPractice {
 
     public void orderPractice() {
-        ExecutorService executorService = Executors.newFixedThreadPool(3);
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
         long start = System.currentTimeMillis();
         for (int i = 0; i < 5; i++) {
             executorService.execute(new Runnable() {

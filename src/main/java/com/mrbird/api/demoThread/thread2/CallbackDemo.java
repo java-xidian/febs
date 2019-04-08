@@ -1,4 +1,4 @@
-package com.mrbird.api.demoThread;
+package com.mrbird.api.demoThread.thread2;
 
 /**
  * @Description
@@ -12,6 +12,8 @@ import java.util.concurrent.TimeUnit;
 public class CallbackDemo {
     public static void main(String[] args) {
         CallbackDemo 雇主 = new CallbackDemo();
+
+
         TimeWatcher 观察者 = new TimeWatcher();
         //雇主与观察者建立雇佣关系
         观察者.setCallback(雇主);
