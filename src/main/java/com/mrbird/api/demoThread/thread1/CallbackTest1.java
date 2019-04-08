@@ -19,31 +19,13 @@ import java.util.concurrent.Executors;
  * 如果需要同步等待线程处理结果可以使用下面介绍的Futures
  */
 
-public class NettyTest1 {
+public class CallbackTest1 {
     static ExecutorService executorService = Executors.newFixedThreadPool(10);
 
     public static void doStm(final ICallback callback) {
         // 初始化一个线程
-        Thread thread = new Thread() {
-            @Override
-            public void run() {
-                // 这里是业务逻辑处理
-                System.out.println("子线任务执行:" + Thread.currentThread().getId());
-                // 为了能看出效果 ，让当前线程阻塞5秒
-                try {
-                    Thread.sleep(5000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                //后续,处理完业务逻辑
-                Map<String, Object> params = new HashMap<String, Object>();
-                params.put("a1", "这是我返回的参数字符串...");
-                callback.callbackByMyself(params);
-            }
-
-            ;
-        };
-        executorService.execute(thread);
+        WorkThread workThread = new WorkThread(callback);
+        executorService.execute(workThread);
         //一定要调用这个方法，不然executorService.isTerminated()永远不为true
         executorService.shutdown();
 
@@ -65,11 +47,40 @@ public class NettyTest1 {
 //            }
 //        });
         doStm((params) -> {
-            System.out.println("我的任务已经处理完成了，返回参数a1=" + params.get("a1"));
+            // 结束之后会主动把处理参数params传递过来
+            //执行完子线程处理
+            System.out.println("执行完子线程处理,我的任务已经处理完成了，返回参数a1=" + params.get("a1"));
         });
         System.out.println("主线任务已经执行完了:" + Thread.currentThread().getId());
 
     }
 
-}
+    static class WorkThread implements Runnable {
+        private ICallback callback;
 
+        public WorkThread(ICallback callback) {
+            this.callback = callback;
+        }
+
+        @Override
+        public void run() {
+            // 这里是业务逻辑处理
+            System.out.println("子线任务执行:" + Thread.currentThread().getId());
+            // 为了能看出效果 ，让当前线程阻塞5秒
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            //后续,处理完业务逻辑
+            Map<String, Object> params = new HashMap<String, Object>();
+            params.put("a1", "这是我返回的参数字符串...");
+            //返回执行完成参数
+            callback.callbackByMyself(params);
+        }
+
+
+    }
+
+
+}
