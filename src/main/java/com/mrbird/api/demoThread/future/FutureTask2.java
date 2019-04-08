@@ -48,7 +48,8 @@ class Task2 implements Callable<Integer> {
         System.out.println("子线程在进行计算");
         Thread.sleep(3000);
         int sum = 0;
-        for (int i = 0; i < 100; i++) {
+        int count = 100;
+        for (int i = 0; i < count; i++) {
             sum += i;
         }
         return sum;
