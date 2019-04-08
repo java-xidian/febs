@@ -40,19 +40,21 @@ public class FutureTask2 {
         }
         System.out.println("所有任务执行完毕");
     }
-}
 
-class Task2 implements Callable<Integer> {
-    @Override
-    public Integer call() throws Exception {
-        System.out.println("子线程在进行计算");
-        Thread.sleep(3000);
-        int sum = 0;
-        int count = 100;
-        for (int i = 0; i < count; i++) {
-            sum += i;
+    static class Task2 implements Callable<Integer> {
+        @Override
+        public Integer call() throws Exception {
+            System.out.println("子线程在进行计算");
+            Thread.sleep(3000);
+            int sum = 0;
+            int count = 100;
+            for (int i = 0; i < count; i++) {
+                sum += i;
+            }
+            return sum;
         }
-        return sum;
     }
 }
+
+
 
