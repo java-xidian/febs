@@ -19,10 +19,11 @@ import java.util.concurrent.Executors;
  * 如果需要同步等待线程处理结果可以使用下面介绍的Futures
  */
 
-public class CallbackTest1 {
-    static ExecutorService executorService = Executors.newFixedThreadPool(10);
+public class CallableTest1 {
+
 
     public static void doStm(final ICallback callback) {
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
         // 初始化一个线程
         WorkThread workThread = new WorkThread(callback);
         executorService.execute(workThread);

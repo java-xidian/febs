@@ -22,8 +22,7 @@ public class CallableTest2 {
 
 
     public static void main(String[] args) {
-
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
         //实现一个Callable接口
         ThreadDemo threadDemo = new ThreadDemo();
         //记得要用submit，执行Callable对象
