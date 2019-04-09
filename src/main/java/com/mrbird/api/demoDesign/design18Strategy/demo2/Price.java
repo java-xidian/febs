@@ -2,13 +2,13 @@ package com.mrbird.api.demoDesign.design18Strategy.demo2;
 
 /**
  * 价格类
+ * 持有一个具体的策略对象
  *
  * @Description
  * @Author: liucq
  * @Date: 2019/3/13
  */
 public class Price {
-    //持有一个具体的策略对象
     private MemberStrategy strategy;
 
     /**

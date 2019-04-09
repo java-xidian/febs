@@ -1,12 +1,14 @@
 package com.mrbird.api.demoDesign.design18Strategy;
 
 /**
+ * 持有一个具体策略的对象
+ *
  * @Description
  * @Author: liucq
  * @Date: 2019/3/13
  */
 public class Context {
-    //持有一个具体策略的对象
+
     private Strategy strategy;
 
     /**
