@@ -7,7 +7,7 @@ package com.mrbird.api.demoDesign.design06Adapte.demo3Class;
  * @Author: liucq
  * @Date: 2019/3/5
  */
-public class 鲁智深 extends 天星 {
+public class 鲁智深 extends 中介 {
     @Override
     public void 习武() {
         System.out.println("拳打镇关西;\n" +

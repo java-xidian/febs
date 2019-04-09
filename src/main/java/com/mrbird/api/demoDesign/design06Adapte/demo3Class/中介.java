@@ -7,7 +7,7 @@ package com.mrbird.api.demoDesign.design06Adapte.demo3Class;
  * @Author: liucq
  * @Date: 2019/3/5
  */
-public abstract class 天星 implements 和尚 {
+public abstract class 中介 implements 和尚 {
     @Override
     public void 吃斋() {
     }
