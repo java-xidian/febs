@@ -14,6 +14,7 @@ public abstract class Account {
     public final double calculateInterest() {
         double interestRate = doCalculateInterestRate();
         String accountType = doCalculateAccountType();
+        //count
         double amount = calculateAmount(accountType);
         return amount * interestRate;
     }
