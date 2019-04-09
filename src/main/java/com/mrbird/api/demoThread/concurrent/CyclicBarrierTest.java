@@ -1,14 +1,7 @@
 package com.mrbird.api.demoThread.concurrent;
 
-import org.apache.commons.lang3.RandomUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.Arrays;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 /**
  * @Description
@@ -16,72 +9,58 @@ import java.util.concurrent.Executors;
  * @Date: 2019/4/8
  */
 public class CyclicBarrierTest {
-    /**
-     * <p>CyclicBarrier-循环屏障-模拟多线程计算</p>
-     *
-     * @author hanchao 2018/3/29 22:48
-     **/
-    public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(CyclicBarrierTest.class);
-        //数组大小
-        int size = 50000;
-        //定义数组
-        int[] numbers = new int[size];
-        //随机初始化数组
-        for (int i = 0; i < size; i++) {
-            numbers[i] = RandomUtils.nextInt(100, 1000);
+
+    static class Worker implements Runnable {
+
+        private String name;
+        private CyclicBarrier cyclicBarrier;
+
+        public Worker(String name, CyclicBarrier cyclicBarrier) {
+            this.name = name;
+            this.cyclicBarrier = cyclicBarrier;
         }
 
-        //单线程计算结果
-        System.out.println();
-        Long sum = 0L;
-        for (int i = 0; i < size; i++) {
-            sum += numbers[i];
-        }
-        logger.info("单线程计算结果：" + sum);
-
-
-        //多线程计算结果
-        //定义线程池
-        ExecutorService executorService = Executors.newFixedThreadPool(5);
-        //定义五个Future去保存子数组计算结果
-        final int[] results = new int[5];
-
-        //定义一个循环屏障，在屏障线程中进行计算结果合并
-        CyclicBarrier barrier = new CyclicBarrier(5, () -> {
-            int sums = 0;
-            for (int i = 0; i < 5; i++) {
-                sums += results[i];
+        @Override
+        public void run() {
+            System.out.println(name + " is working");
+            try {
+                Thread.sleep(2000);
+                //到达屏障出（同步点）
+                cyclicBarrier.await();
+                //线程都到了后继续向下执行,也可以不要下面代码,什么都不做了
+                System.out.println(name + " do other things");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (BrokenBarrierException e) {
+                e.printStackTrace();
             }
-            logger.info("多线程计算结果：" + sums);
-        });
-
-        //子数组长度
-        int length = 10000;
-        //定义五个线程去计算
-        for (int i = 0; i < 5; i++) {
-            //定义子数组
-            int[] subNumbers = Arrays.copyOfRange(numbers, (i * length), ((i + 1) * length));
-            //盛放计算结果
-            int finalI = i;
-            executorService.submit(() -> {
-                for (int j = 0; j < subNumbers.length; j++) {
-                    results[finalI] += subNumbers[j];
-                }
-                //等待其他线程进行计算
-                try {
-                    barrier.await();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (BrokenBarrierException e) {
-                    e.printStackTrace();
-                }
-            });
         }
-
-        //关闭线程池
-        executorService.shutdown();
     }
 
+    static class Boss implements Runnable {
+
+        private String name;
+
+        public Boss(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public void run() {
+            System.out.println(name + " checks work");
+
+        }
+    }
+
+    public static void main(String[] args) {
+
+        //其他线程都达到屏障后,再执行 boss 线程
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(3, new Boss("boss"));
+        for (int i = 0; i < 3; i++) {
+            new Thread(new Worker("worker" + i, cyclicBarrier)).start();
+        }
+    }
 }
+
+
 
