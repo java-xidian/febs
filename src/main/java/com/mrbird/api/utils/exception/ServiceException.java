@@ -1,6 +1,7 @@
 package com.mrbird.api.utils.exception;
 
-import com.hsfw.backyard.biz.code.AbstractReturnCode;
+
+import com.mrbird.api.utils.springMvc.AbstractResultEnum;
 
 /**
  * @author chenyao
@@ -8,11 +9,11 @@ import com.hsfw.backyard.biz.code.AbstractReturnCode;
  */
 public class ServiceException extends AbstractBackyardException {
 
-    public ServiceException(AbstractReturnCode abstractReturnCode) {
+    public ServiceException(AbstractResultEnum abstractReturnCode) {
         super(abstractReturnCode);
     }
 
-    public ServiceException(AbstractReturnCode abstractReturnCode, String message) {
+    public ServiceException(AbstractResultEnum abstractReturnCode, String message) {
         super(abstractReturnCode, message);
     }
 }
