@@ -13,7 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 import java.util.*;
 
@@ -27,23 +26,8 @@ public class CommonControllerAdvice {
 
     private static final Logger logger = LoggerFactory.getLogger(CommonControllerAdvice.class);
 
-
-    private static final Map<Class, Object> DEFAULT_VALUE_OF_PRIMITIVE = new HashMap<Class, Object>() {{
-        put(int.class, 0);
-        put(double.class, 0.0D);
-        put(long.class, 0L);
-        put(char.class, '\u0000');
-        put(float.class, 0.0F);
-        put(short.class, 0);
-        put(byte.class, 0);
-        put(boolean.class, false);
-        put(void.class, null);
-    }};
-
-
     @ExceptionHandler(value = Exception.class)
-    public ModelAndView handler(HttpServletRequest request,
-                                HttpServletResponse response, HandlerMethod handler, Exception ex) {
+    public ModelAndView handler(HttpServletRequest request, HandlerMethod handler, Exception ex) {
         Method method = handler.getMethod();
         //1.打印error日志，包括入参，异常信息
         logger.error("[commonControllerAdvice,method:{}, params:{}] 异常", method.getName(), request.getParameterMap(), ex);
@@ -72,6 +56,18 @@ public class CommonControllerAdvice {
         jspView.addObject("exception", ex.getMessage());
         return jspView;
     }
+
+    private static final Map<Class, Object> DEFAULT_VALUE_OF_PRIMITIVE = new HashMap<Class, Object>() {{
+        put(int.class, 0);
+        put(double.class, 0.0D);
+        put(long.class, 0L);
+        put(char.class, '\u0000');
+        put(float.class, 0.0F);
+        put(short.class, 0);
+        put(byte.class, 0);
+        put(boolean.class, false);
+        put(void.class, null);
+    }};
 
 
     /**
