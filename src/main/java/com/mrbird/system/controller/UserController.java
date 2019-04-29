@@ -8,6 +8,7 @@ import com.mrbird.common.util.FileUtils;
 import com.mrbird.common.util.MD5Utils;
 import com.mrbird.system.domain.User;
 import com.mrbird.system.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.slf4j.Logger;
@@ -21,6 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @Controller
 public class UserController extends BaseController {
 
@@ -34,6 +36,7 @@ public class UserController extends BaseController {
     @RequestMapping("user")
     @RequiresPermissions("user:list")
     public String index(Model model) {
+        log.info("test");
         User user = super.getCurrentUser();
         model.addAttribute("user", user);
         return "system/user/user";

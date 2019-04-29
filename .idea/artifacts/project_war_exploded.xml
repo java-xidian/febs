@@ -160,6 +160,7 @@
           <element id="library" level="project" name="Maven: com.github.ulisesbocchio:jasypt-spring-boot-starter:2.1.0" />
           <element id="library" level="project" name="Maven: com.github.ulisesbocchio:jasypt-spring-boot:2.1.0" />
           <element id="library" level="project" name="Maven: org.jasypt:jasypt:1.9.2" />
+          <element id="library" level="project" name="Maven: net.coobird:thumbnailator:0.4.8" />
         </element>
       </element>
       <element id="directory" name="META-INF">
