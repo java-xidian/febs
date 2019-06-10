@@ -16,7 +16,7 @@ import java.util.Base64;
  *
  * @author Amuro
  */
-public class _01Base64Strategy {
+public class _11Base64Strategy {
 
     public static String encode(String src) {
         byte[] encodeBytes = Base64.getEncoder().encode(src.getBytes());

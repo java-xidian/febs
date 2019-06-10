@@ -18,7 +18,7 @@ import java.security.*;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Objects;
 
-public class DHStrategy42 {
+public class _42DHStrategy {
     private Cipher cipher;
     private SecretKey receiverSecretKey;
 
@@ -84,7 +84,7 @@ public class DHStrategy42 {
     }
 
     public static void main(String[] args) {
-        DHStrategy42 dhStrategy42 = new DHStrategy42();
+        _42DHStrategy dhStrategy42 = new _42DHStrategy();
         System.out.println(dhStrategy42.encode("123"));
     }
 }

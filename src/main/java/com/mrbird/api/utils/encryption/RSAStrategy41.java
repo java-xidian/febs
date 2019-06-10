@@ -19,7 +19,7 @@ import java.security.spec.X509EncodedKeySpec;
  * RSA 算法基于一个十分简单的数论事实：将两个大素数相乘十分容易，
  * 但是想要对其乘积进行因式分解却极其困难，因此可以将乘积公开作为加密密钥。
  */
-public class _41RSAStrategy {
+public class RSAStrategy41 {
     private RSAPublicKey rsaPublicKey;
     private RSAPrivateKey rsaPrivateKey;
 
@@ -86,7 +86,7 @@ public class _41RSAStrategy {
     }
 
     public static void main(String[] args) {
-        _41RSAStrategy rsaStrategy41 = new _41RSAStrategy();
+        RSAStrategy41 rsaStrategy41 = new RSAStrategy41();
         System.out.println(rsaStrategy41.encode("123"));
     }
 }

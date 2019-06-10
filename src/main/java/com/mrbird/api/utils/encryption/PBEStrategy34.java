@@ -21,7 +21,7 @@ import java.security.SecureRandom;
  *
  * @author Amuro
  */
-public class _34PBEStrategy {
+public class PBEStrategy34 {
     private Cipher cipher;
     private SecretKey generateKey;
     private PBEParameterSpec pbeParameterSpec;
@@ -61,7 +61,7 @@ public class _34PBEStrategy {
     }
 
     public static void main(String[] args) {
-        _34PBEStrategy pbeStrategy34 = new _34PBEStrategy();
+        PBEStrategy34 pbeStrategy34 = new PBEStrategy34();
         System.out.println(pbeStrategy34.encode("123"));
     }
 }
