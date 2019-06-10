@@ -6,14 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a014d2a4-4e45-4282-bd0f-405a2e1cd699" name="Default Changelist" comment="exception">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/CleanupExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/DataExample1.java" afterDir="false" />
+    <list default="true" id="a014d2a4-4e45-4282-bd0f-405a2e1cd699" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/Converters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/ReturnCodeRange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/project_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/project_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mrbird/system/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/system/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/AbstractBackyardException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/AbstractBackyardException1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/BizException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/BizException1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/RemoteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/RemoteException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/ServiceException1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/AbstractResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/AbstractResultEnum2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/CommonControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/CommonControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/Result.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/" />
@@ -55,79 +62,84 @@
     <session id="-1546496184">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
+          <entry key="project.closed" value="42" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="5" />
-          <entry key="project.open.time.5" value="6" />
-          <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.5" value="7" />
+          <entry key="project.open.time.6" value="9" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="36" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Dockerfile" value="3" />
-          <entry key="class" value="16" />
+          <entry key="class" value="17" />
+          <entry key="css" value="1" />
           <entry key="fastjson" value="1" />
-          <entry key="html" value="3" />
-          <entry key="java" value="575" />
+          <entry key="html" value="4" />
+          <entry key="java" value="620" />
           <entry key="js" value="5" />
           <entry key="md" value="1" />
           <entry key="png" value="17" />
           <entry key="readme" value="38" />
           <entry key="sql" value="4" />
           <entry key="txt" value="6" />
-          <entry key="xml" value="36" />
-          <entry key="yml" value="30" />
+          <entry key="xml" value="39" />
+          <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="16" />
+          <entry key="CLASS" value="17" />
+          <entry key="CSS" value="1" />
           <entry key="Dockerfile" value="3" />
-          <entry key="HTML" value="3" />
+          <entry key="HTML" value="4" />
           <entry key="Image" value="17" />
-          <entry key="JAVA" value="575" />
+          <entry key="JAVA" value="620" />
           <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="45" />
           <entry key="SQL" value="4" />
-          <entry key="XML" value="36" />
-          <entry key="YAML" value="30" />
+          <entry key="XML" value="39" />
+          <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="4" />
-          <entry key="dummy" value="10" />
-          <entry key="java" value="2156" />
+          <entry key="dummy" value="12" />
+          <entry key="java" value="2255" />
           <entry key="md" value="2" />
           <entry key="readme" value="899" />
           <entry key="sql" value="2" />
-          <entry key="txt" value="107" />
-          <entry key="xml" value="110" />
+          <entry key="txt" value="114" />
+          <entry key="xml" value="114" />
           <entry key="yml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="2156" />
+          <entry key="JAVA" value="2255" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="1016" />
+          <entry key="PLAIN_TEXT" value="1025" />
           <entry key="SQL" value="2" />
-          <entry key="XML" value="110" />
+          <entry key="XML" value="114" />
           <entry key="YAML" value="22" />
         </counts>
       </usages-collector>
@@ -138,41 +150,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/DataExample1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/CleanupExample.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/CommonControllerAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/system/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            <state relative-caret-position="780">
+              <caret line="39" column="44" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -189,10 +171,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cc.mrbird</find>
-      <find>qrtz_job_details</find>
-      <find>logoutUrl</find>
-      <find>tom</find>
       <find>mrbird</find>
       <find>MrBird</find>
       <find>project</find>
@@ -218,6 +196,10 @@
       <find>FutureCook</find>
       <find>.info</find>
       <find>calculateAmount</find>
+      <find>bHeyan</find>
+      <find>maven-compiler-plugin</find>
+      <find>lok</find>
+      <find>lombok</find>
       <find>AbstractReturnCode</find>
     </findStrings>
     <replaceStrings>
@@ -232,23 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/thread1/CallableTest4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/future/CookFuture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/CountDownLatchTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/ExecuteOrderPractice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/OrderThreadExecute.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/CyclicBarrierTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/CountDownLatchTest2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/CyclicBarrierTest2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/SemaphoreTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/CyclicBarrierTest3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/CyclicBarrierTotal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/ExchangeDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/threadSaft/UseThreadLocal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/threadSoft/UseThreadLocal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/threadSoft/CounterDemo1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/threadSoft/ConcurrentHashMapTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design03Build/Builder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design04Prototype/demo2Login/PrototypeManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design12Proxy/ProxyObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design12Proxy/RealObject.java" />
@@ -269,7 +234,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/RestUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/exception/AbstractBackyardException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/exception/BizException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/BizException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/CommonControllerAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/PersonStatic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/ServiceException.java" />
@@ -278,11 +242,29 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/fastjson/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/fastjson/FastJsonMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/ImgUtils.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/DataExample1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/ToStringExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/system/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/CleanupExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoRestful/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoRestful/Auth.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoRestful/AnnoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread1JoinDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread2MainJoinDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread3WaitDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread4PoolDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread5ConditionDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread6CountDownLatchDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread7CyclicBarrierDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread8SemaphoreDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/AbstractReturnCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/ReturnCodeRange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/BizException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/AbstractBackyardException1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/RemoteException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/Converters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/AbstractResultEnum2.java" />
       </list>
     </option>
   </component>
@@ -342,6 +324,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -403,7 +387,18 @@
               <item name="mrbird" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="lombok" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FEBS-Shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="springMvc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
@@ -412,13 +407,19 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FEBS-Shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,7 +429,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556528237112" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560152069530" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -441,13 +442,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\BaseSubjectWork\FEBS-Shiro\src\main\resources\templates" />
       <recent name="D:\BaseSubjectWork\FEBS-Shiro\src\main\java\com\mrbird\api" />
       <recent name="D:\BaseSubjectWork\FEBS-Shiro\src\main\java\com\mrbird\api\demoDesign\design19Template\demo1" />
       <recent name="D:\BaseSubjectWork\FEBS-Shiro\src\main\java\com\mrbird\api\module\design18Strategy\demo2" />
       <recent name="D:\BaseSubjectWork\FEBS-Shiro\src\main\java\com\mrbird\api\module\design18Strategy" />
-      <recent name="D:\BaseSubjectWork\FEBS-Shiro\src\main\java\com\mrbird\api\module\design17State" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mrbird.api.utils.exception" />
+      <recent name="com.mrbird.api.utils" />
       <recent name="com.mrbird.api.utils.springMvc" />
       <recent name="com.mrbird.api.demoThread.thread1" />
       <recent name="com.mrbird.web" />
@@ -475,33 +478,7 @@
     </option>
     <option name="contentProportion" value="0.18421052" />
   </component>
-  <component name="RunManager" selected="Application.FastJsonMain">
-    <configuration name="BlockingQueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.demoThread.concurrent.BlockingQueueTest" />
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mrbird.api.demoThread.concurrent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.demoDesign.design19Template.demo1.Client" />
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mrbird.api.demoDesign.design19Template.demo1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Thread3WaitDemo">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mrbird.api.module.Client" />
       <module name="project" />
@@ -515,12 +492,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastJsonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.utils.fastjson.FastJsonMain" />
+    <configuration name="Thread3WaitDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.demoThreadOrder.Thread3WaitDemo" />
       <module name="project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mrbird.api.utils.fastjson.*" />
+          <option name="PATTERN" value="com.mrbird.api.demoThreadOrder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -528,12 +505,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonStatic$HelloWrold" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.functionTest.PersonStatic$HelloWrold" />
+    <configuration name="Thread4PoolDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.demoThreadOrder.Thread4PoolDemo" />
       <module name="project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mrbird.api.functionTest.*" />
+          <option name="PATTERN" value="com.mrbird.api.demoThreadOrder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -541,12 +518,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SemaphoreTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.demoThread.concurrent.SemaphoreTest2" />
+    <configuration name="Thread5ConditionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.demoThreadOrder.Thread5ConditionDemo" />
       <module name="project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mrbird.api.demoThread.concurrent.*" />
+          <option name="PATTERN" value="com.mrbird.api.demoThreadOrder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Thread6CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.demoThreadOrder.Thread6CountDownLatchDemo" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mrbird.api.demoThreadOrder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Thread7CyclicBarrierDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mrbird.api.demoThreadOrder.Thread7CyclicBarrierDemo" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mrbird.api.demoThreadOrder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -645,21 +648,23 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.ApplicationMain" />
       <item itemvalue="Tomcat Server.fast" />
       <item itemvalue="Docker.docker/Dockerfile" />
       <item itemvalue="Application.Client" />
-      <item itemvalue="Application.SemaphoreTest2" />
-      <item itemvalue="Application.BlockingQueueTest" />
-      <item itemvalue="Application.PersonStatic$HelloWrold" />
-      <item itemvalue="Application.FastJsonMain" />
+      <item itemvalue="Application.Thread3WaitDemo" />
+      <item itemvalue="Application.Thread4PoolDemo" />
+      <item itemvalue="Application.Thread5ConditionDemo" />
+      <item itemvalue="Application.Thread6CountDownLatchDemo" />
+      <item itemvalue="Application.Thread7CyclicBarrierDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FastJsonMain" />
-        <item itemvalue="Application.PersonStatic$HelloWrold" />
-        <item itemvalue="Application.BlockingQueueTest" />
-        <item itemvalue="Application.SemaphoreTest2" />
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Thread3WaitDemo" />
+        <item itemvalue="Application.Thread7CyclicBarrierDemo" />
+        <item itemvalue="Application.Thread6CountDownLatchDemo" />
+        <item itemvalue="Application.Thread5ConditionDemo" />
+        <item itemvalue="Application.Thread4PoolDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -709,21 +714,16 @@
       <workItem from="1555307151480" duration="467000" />
       <workItem from="1556185984301" duration="904000" />
       <workItem from="1556241660032" duration="1309000" />
-      <workItem from="1556518520375" duration="2446000" />
-    </task>
-    <task id="LOCAL-00005" summary="rebuild">
-      <created>1548313639481</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1548313639481</updated>
-    </task>
-    <task id="LOCAL-00006" summary="rebuild">
-      <created>1548332759498</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1548332759498</updated>
+      <workItem from="1556518520375" duration="3105000" />
+      <workItem from="1556590545535" duration="221000" />
+      <workItem from="1556611080141" duration="1218000" />
+      <workItem from="1556612317032" duration="333000" />
+      <workItem from="1556612735545" duration="4905000" />
+      <workItem from="1557128395888" duration="587000" />
+      <workItem from="1557471446692" duration="1841000" />
+      <workItem from="1559699241881" duration="1208000" />
+      <workItem from="1559701385436" duration="677000" />
+      <workItem from="1560151277093" duration="771000" />
     </task>
     <task id="LOCAL-00007" summary="rebuild">
       <created>1548333917732</created>
@@ -1054,7 +1054,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556242929849</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="lombok">
+      <created>1556528275404</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1556528275404</updated>
+    </task>
+    <task id="LOCAL-00055" summary="lombok">
+      <created>1556616208207</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1556616208208</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1066,7 +1080,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138409000" />
+    <option name="totallyTimeSpent" value="150829000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1081,7 +1095,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.18443497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.29317698" />
       <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.18710022" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1092,18 +1106,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4968017" weight="0.30846325" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" weight="0.19933185" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86247337" weight="0.532294" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8619403" weight="0.21380846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32962137" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946696" weight="0.32962137" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.67537314" weight="0.266147" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.13752665" side_tool="true" visible="true" weight="0.27728286" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.1380597" side_tool="true" visible="true" weight="0.21380846" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" sideWeight="0.49946696" weight="0.5155902" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4978678" weight="0.27728286" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.48933902" weight="0.2583519" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.48880598" weight="0.2583519" />
       <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.90618336" weight="0.5400891" />
       <window_info anchor="bottom" id="Application Servers" order="16" sideWeight="0.49946696" weight="0.32962137" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="17" />
@@ -1153,7 +1167,8 @@
     <MESSAGE value="代理对象角色" />
     <MESSAGE value="callable" />
     <MESSAGE value="exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="exception" />
+    <MESSAGE value="lombok" />
+    <option name="LAST_COMMIT_MESSAGE" value="lombok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1170,133 +1185,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design06Adapte/demo3Class/鲁智深.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design06Adapte/demo2Class/Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design06Adapte/demo2Class/Adaptee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design06Adapte/demo1Class/Target.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design06Adapte/demo1Class/Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design06Adapte/demo3Class/中介.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design18Strategy/ConcreteStrategyA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design18Strategy/ConcreteStrategyC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design18Strategy/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design18Strategy/Strategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design18Strategy/demo2/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design18Strategy/demo2/Price.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design19Template/demo1/CDAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design19Template/demo1/MoneyMarketAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design19Template/demo1/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design19Template/demo1/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/SemaphoreTest2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/BlockingQueue.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/concurrent/BlockingQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-686">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThread/BlockingQueue/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1318,13 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/FastJsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="58" column="76" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design19Template/AbstractTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -1339,27 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/AbstractResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/CommonControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="39" column="44" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design19Template/demo2/test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoDesign/design19Template/demo2/testmain.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1368,39 +1228,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/BizException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/RemoteException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/AbstractBackyardException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/functionTest/PersonStatic.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/functionTest/PersonStatic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="41" selection-start-column="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/ServiceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1437,9 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1454,9 +1283,127 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4050">
           <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/ToStringExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/system/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/OCX_JavaScript.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/DataExample1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/iCheck/minimal/pink.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoRestful/Auth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoRestful/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/reflections/reflections/0.9.11/reflections-0.9.11.jar!/org/reflections/scanners/AbstractScanner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoRestful/AnnoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="101" selection-end-line="36" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread1JoinDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1202">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread2MainJoinDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="38" column="4" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread4PoolDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1504">
+          <caret line="52" column="36" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/workspace2018/software/jdk1.8.0_121/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="695" column="29" selection-start-line="695" selection-start-column="29" selection-end-line="695" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread5ConditionDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-839">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread6CountDownLatchDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1136">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread8SemaphoreDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread3WaitDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="59" column="16" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/CleanupExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
         </state>
       </provider>
     </entry>
@@ -1467,48 +1414,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/demoThreadOrder/Thread7CyclicBarrierDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+        <state>
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/ToStringExample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/FastJsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="313">
+          <caret line="58" column="76" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/ServiceException1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/BizException1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="44" />
           <folding>
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/DataExample1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/RemoteException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="330">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/system/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/Converters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/lombok/CleanupExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="480">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/AbstractReturnCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1980">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/AbstractResultEnum2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/ReturnCodeRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/exception/AbstractBackyardException1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mrbird/api/utils/springMvc/CommonControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="44" />
         </state>
       </provider>
     </entry>

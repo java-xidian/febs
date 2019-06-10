@@ -37,11 +37,11 @@ public class Result<T> {
         return new Result<>(true, 0, message, data);
     }
 
-    public static <T> Result<T> fail(AbstractResultEnum returnCode) {
+    public static <T> Result<T> fail(AbstractResultEnum2 returnCode) {
         return new Result<>(false, returnCode.code(), returnCode.message(), null);
     }
 
-    public static <T> Result<T> fail(AbstractResultEnum returnCode, String message) {
+    public static <T> Result<T> fail(AbstractResultEnum2 returnCode, String message) {
         return new Result<>(false, returnCode.code(), message, null);
     }
 

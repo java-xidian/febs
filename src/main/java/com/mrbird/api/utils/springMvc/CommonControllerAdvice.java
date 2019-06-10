@@ -1,7 +1,7 @@
 package com.mrbird.api.utils.springMvc;
 
 
-import com.mrbird.api.utils.exception.AbstractBackyardException;
+import com.mrbird.api.utils.exception.AbstractBackyardException1;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
@@ -116,8 +116,8 @@ public class CommonControllerAdvice {
 
 
     private ErrorMessage build(Exception ex) {
-        if (ex instanceof AbstractBackyardException) {
-            AbstractBackyardException e = (AbstractBackyardException) ex;
+        if (ex instanceof AbstractBackyardException1) {
+            AbstractBackyardException1 e = (AbstractBackyardException1) ex;
             return new ErrorMessage(e.getErrorCode(), e.getMessage());
         }
         if (ex instanceof BindException) {
@@ -126,10 +126,10 @@ public class CommonControllerAdvice {
                     .stream()
                     .findFirst()
                     .map(DefaultMessageSourceResolvable::getDefaultMessage)
-                    .orElse(AbstractResultEnum.COMM_SYSTEM_EXCEPTION.message());
-            return new ErrorMessage(AbstractResultEnum.COMM_ILLEGAL_ARGUMENT.code(), message);
+                    .orElse(AbstractResultEnum2.COMM_SYSTEM_EXCEPTION.message());
+            return new ErrorMessage(AbstractResultEnum2.COMM_ILLEGAL_ARGUMENT.code(), message);
         }
-        return new ErrorMessage(AbstractResultEnum.COMM_SYSTEM_EXCEPTION.code(), AbstractResultEnum.COMM_SYSTEM_EXCEPTION.message());
+        return new ErrorMessage(AbstractResultEnum2.COMM_SYSTEM_EXCEPTION.code(), AbstractResultEnum2.COMM_SYSTEM_EXCEPTION.message());
     }
 
 
