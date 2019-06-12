@@ -11,7 +11,7 @@ package com.mrbird.api.demoDesign.design18Strategy.demo2;
 public class Client {
     public static void main(String[] args) {
         //选择并创建需要使用的策略对象
-        MemberStrategy strategy = new AdvancedMemberStrategy();
+        AllStrategy strategy = new _03AdvancedMemberStrategy();
         //创建环境
         Price price = new Price(strategy);
         //计算价格

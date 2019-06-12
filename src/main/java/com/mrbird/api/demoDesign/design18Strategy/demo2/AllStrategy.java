@@ -7,7 +7,7 @@ package com.mrbird.api.demoDesign.design18Strategy.demo2;
  * @Author: liucq
  * @Date: 2019/3/13
  */
-public interface MemberStrategy {
+public interface AllStrategy {
     /**
      * 计算图书的价格
      *

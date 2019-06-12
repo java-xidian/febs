@@ -7,7 +7,7 @@ package com.mrbird.api.demoDesign.design18Strategy;
  * @Author: liucq
  * @Date: 2019/3/13
  */
-public class Context {
+public class HolderContext {
 
     private Strategy strategy;
 
@@ -16,7 +16,7 @@ public class Context {
      *
      * @param strategy 具体策略对象
      */
-    public Context(Strategy strategy) {
+    public HolderContext(Strategy strategy) {
         this.strategy = strategy;
     }
 

@@ -5,7 +5,7 @@ package com.mrbird.api.demoDesign.design18Strategy.demo2;
  * @Author: liucq
  * @Date: 2019/3/13
  */
-public class PrimaryMemberStrategy implements MemberStrategy {
+public class _01PrimaryMemberStrategy implements AllStrategy {
 
     @Override
     public double calcPrice(double booksPrice) {

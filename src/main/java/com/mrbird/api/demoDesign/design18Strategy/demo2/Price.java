@@ -9,14 +9,14 @@ package com.mrbird.api.demoDesign.design18Strategy.demo2;
  * @Date: 2019/3/13
  */
 public class Price {
-    private MemberStrategy strategy;
+    private AllStrategy strategy;
 
     /**
      * 构造函数，传入一个具体的策略对象
      *
      * @param strategy 具体的策略对象
      */
-    public Price(MemberStrategy strategy) {
+    public Price(AllStrategy strategy) {
         this.strategy = strategy;
     }
 
