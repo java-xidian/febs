@@ -5,7 +5,7 @@ package com.mrbird.api.demoDesign.design19Template.demo1;
  * @Author: liucq
  * @Date: 2019/3/13
  */
-public abstract class Account {
+public abstract class AllAccount {
     /**
      * 模板方法，计算利息数额
      *

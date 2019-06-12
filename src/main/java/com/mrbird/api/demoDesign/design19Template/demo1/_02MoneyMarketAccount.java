@@ -5,16 +5,18 @@ package com.mrbird.api.demoDesign.design19Template.demo1;
  * @Author: liucq
  * @Date: 2019/3/13
  */
-public class CDAccount extends Account {
+public class _02MoneyMarketAccount extends AllAccount {
 
     @Override
     protected String doCalculateAccountType() {
-        return "Certificate of Deposite";
+
+        return "Money Market";
     }
 
     @Override
     protected double doCalculateInterestRate() {
-        return 0.06;
+
+        return 0.045;
     }
 
 }
