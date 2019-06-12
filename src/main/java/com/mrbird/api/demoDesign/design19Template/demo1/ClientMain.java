@@ -5,7 +5,7 @@ package com.mrbird.api.demoDesign.design19Template.demo1;
  * @Author: liucq
  * @Date: 2019/3/13
  */
-public class Client {
+public class ClientMain {
 
     public static void main(String[] args) {
         AllAccount account = new _02MoneyMarketAccount();
