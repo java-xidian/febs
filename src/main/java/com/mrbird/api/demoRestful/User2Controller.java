@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/users")
 @Api(value = "用户管理", tags = {"用户管理"})
-public class UserController {
+public class User2Controller {
 
     @GetMapping
     @ApiOperation("获取列表")
